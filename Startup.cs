@@ -7,7 +7,7 @@ namespace GitExercise
         public static void Main()
         {
             Console.WriteLine("Console Calculator App");
-            Console.WriteLine(new string('-', 15));
+            Console.WriteLine(new string(c:'-', count:15));
 
             Console.Write("a = ");
             double a = double.Parse(Console.ReadLine() ?? throw new InvalidOperationException());
@@ -35,10 +35,19 @@ namespace GitExercise
                 case "m":
                     OptionsManager.Multiply(a, b);
                     break;
+
+                case "dr":
+                    OptionsManager.DivideRemainder(a, b);
+                    break;
+                case "ex":
+                    Console.Clear();
+                    Console.WriteLine("Goodbye"); 
+                    Console.ReadKey(intercept: true);
+                    return;
             }
 
             Console.WriteLine("Pres any key to close the app...");
-            Console.ReadKey(true);
+            Console.ReadKey(intercept:true);
         }
     }
 }
