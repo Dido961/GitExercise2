@@ -1,3 +1,7 @@
 is_global = true
 build_property.RootNamespace = GitExercise
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\User\Source\Repos\GitExercise2\
+=======
+build_property.ProjectDir = C:\Users\User\Source\Repos\GitExercise23\
+>>>>>>> origin/Dev-B
